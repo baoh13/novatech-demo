@@ -115,11 +115,12 @@ From this point on, these environment variables will be available in every new t
 ### 4. Verify Setup
 
 ```bash
-# Open the website
 npm run dev
+```
 
-Open: **http://localhost:3000/pages/index.html**
+Then open: **http://localhost:3000/pages/index.html**
 
+```bash
 # In another terminal, launch Claude Code
 claude
 ```
@@ -182,12 +183,15 @@ novatech-demo/
 Run these from the project root (`novatech-demo/`):
 
 ```bash
-npm run dev         # Start local server
-npm run lint        # Run ESLint
-npm run format      # Run Prettier
-npm run test        # Run all tests
-npm run test:e2e    # Run Playwright E2E tests
-npm run test:unit   # Run unit tests
+npm run dev             # Start local server
+npm run lint            # Run ESLint
+npm run lint:fix        # Auto-fix ESLint issues
+npm run format          # Run Prettier
+npm run format:check    # Check formatting without writing changes
+npm run test            # Run all tests
+npm run test:e2e        # Run Playwright E2E tests
+npm run test:e2e:ui     # Run Playwright tests with interactive UI
+npm run test:unit       # Run unit tests
 ```
 
 ## Prerequisites
